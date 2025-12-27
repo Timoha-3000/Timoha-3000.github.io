@@ -2,10 +2,8 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>AR.js Marker Example (Lab 2 by Kostya)</title>
-    
+    <title>AR.js Fixed Example</title>
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
-    
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
 </head>
 
@@ -15,10 +13,13 @@
 
         <a-marker preset="hiro">
 
+            <a-box position="0 0.5 0" material="opacity: 0.5; color: red;"></a-box>
+
             <a-gltf-model
-                src="https://cdn.aframe.io/examples/models/gltf/duck/Duck.gltf"
-                scale="0.01 0.01 0.01"
-                position="0 0.5 0"
+                src="https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/Duck/glTF-Binary/Duck.glb"
+                scale="1 1 1"
+                position="0 0 1" 
+                rotation="-90 0 0"
             ></a-gltf-model>
 
         </a-marker>
@@ -28,5 +29,3 @@
     </a-scene>
 </body>
 </html>
-
-
